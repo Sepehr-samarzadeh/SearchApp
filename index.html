@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>SearchMe</title>
+</head>
+<body>
+    <main>
+        <h1 class="offscreen">Search Me A Wikipedia Powered Search Engine</h1>
+        <section class="searchEntry">
+            <h2 class="offscreen">Search Term Entry</h2>
+            <div class="logo" aria-hidden="true">SearchMe</div>
+            <form id="searchBar" class="searchBar">
+                <label for="search" class="offscreen">Enter a search term or phrase</label>
+                <input id="search" type="text" autocomplete="off"/>
+                <div id="clear" class="none button clear" role="button" tabindex="0" aria-label="Clear search terms"><i class="fa-solid fa-x"></i></div>
+                <button id="searchButton" class="button searchButton" type="submit" aria-label="Submit button"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </section>
+        <section class="results">
+            <h2 class="offscreen">Search Results</h2>
+            <div class="statsBar">
+                <div id="stats" class="stats" aria-live="assertive"></div>
+            </div>
+            <div id="searchResults" class="searchResults">
+
+
+                <div class="resultItem">
+                    <div class="resultTitle">
+                        <a href="">Dachshund</a>
+                    </div>
+                    <div class="resultContents">
+                        <div class="resultImage">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Mao-the-dachshund-wikipedia.png/50px-Mao-the-dachshund-wikipedia.png" alt="Dachshund">
+                        </div>
+                        <div class="resultText">
+                            <p class="resultDescription">The dachshund (UK:  DAKS-ənd, DASH-, -⁠huund, -⁠huunt or US:  DAHKS...</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p><span aria-hidden="true">&lt;&lt;</span>Powered by <a href="https://www.wikipedia.org" target="_blank">Wikipedia</a> <span aria-hidden="true">&gt;&gt;</span></p>
+    </footer>
+</body>
+</html>
